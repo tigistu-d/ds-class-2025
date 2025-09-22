@@ -1,0 +1,47 @@
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+.env.*
+
+# --- Jupyter / Colab ---
+.ipynb_checkpoints/
+*.ipynb_checkpoint
+*.ipynb~
+
+# --- VS Code / editors ---
+.vscode/
+.history/
+
+# --- Local data: keep institutional/private data OUT of Git ---
+# Put any sensitive/raw class data under /data or /data-private on your machine.
+# We ignore those folders by default.
+data/
+data-private/
+*/data-private/
+*/data_raw/
+# allow a readme to explain policy
+!data/README.md
+
+# --- Large binaries (avoid accidental pushes) ---
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.sav
+*.dta
+*.rds
+*.feather
+*.parquet
+
+# (figures like PNGs are fine to commit; big design sources can be excluded if desired)
+# *.psd
+# *.ai
